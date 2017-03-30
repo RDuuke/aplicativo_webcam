@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+<meta charset="utf-8">
+<meta content="stuff, to, help, search, engines, not" name="keywords">
+<meta content="What this page is about." name="description">
+<meta content="Display Webcam Stream" name="title">
+<title>Display Webcam Stream</title>
+<link rel="stylesheet" href="css/ed-grid.css">
+<link rel="stylesheet" href="css/template.css">
+
+</head>
+ 
+<body class="dev_">
+<div class="ed-container full">
+    <div class="ed-item s-100 align-center">
+       <div id="contenedor-logo"> 
+        <img src="images/template/logo-atulado.png" alt="A tu lado">
+       </div>
+    </div>
+</div>
+<div class="ed-container padding-1">
+    <section class="ed-item s-100 m-65">
+        <div id="multimedia-box">
+            <div class="multimedia-cam"> 
+	            <video autoplay="true" id="videoElement" marginwidth="0" marginheight="0" frameborder="no"></video>
+            </div>
+            <div class="multimedia-canvas display-none">
+                <canvas id="canvas" marginwidth="0" marginheight="0" frameborder="no" height="560" width="745"></canvas>
+                <canvas id="ghospel" height="0" width="0" style="display:none"></canvas>
+            </div>
+        </div>
+        <a id="startbutton" class="display-block center-block" style="width:100px;height:100px;"><img src="images/template/icono-camara.png" alt=""></a>
+    </section>
+    <section class="ed-item s-100 m-35">
+        <img src="images/template/fotocabina-logo.png" alt="CabinaATuLado" style="margin-left: 18%;">
+        <div id="steps-box m-70">
+            <div class="steps-paginate">
+                <ul id="paginate" class="none-list-astyle main-justify">
+                    <a class="circle this_step_paginate st_1 flex-center text-decoration-none text-bold active" href="">1</a>
+                    <a class="circle this_step_paginate st_2 flex-center text-decoration-none text-bold not-active" href="">2</a>
+                    <a class="circle this_step_paginate st_3 flex-center text-decoration-none text-bold not-active" href="">3</a>
+                    <a class="circle this_step_paginate st_4 flex-center text-decoration-none text-bold not-active" href="">4</a>
+                    <a class="circle this_step_paginate st_5 flex-center text-decoration-none text-bold not-active" href="">5</a>
+                </ul>
+            </div>
+            <br>
+            <div class="steps-description align-center">
+               <div class="content flex-center full position-relative">
+                    <span class="position-absolute text-color-white this-step" style="font-size: 1.5em;top: -10px;">Paso 1</span>
+                    <span class="text-bold text-des" style="font-size: 1.5em;">¡Comienza tomandote una foto!</span>
+               </div>
+            </div>
+            <div class="steps-container  display-none">
+                <div id="content">
+                    <div class="ed-container">
+                        <div class="ed-item s-50"><a data-id="familia" href="" class="position-relative next-menu" id-marc="0" ><img src="images/familia/logoprograma-fg.png" alt=""><span style="bottom: 33px;left: 30%;" class="position-absolute text-color-white display-block">Familia Gestante</span></a></div>
+                        <div class="ed-item s-50"><a data-id="cuidado" href="" class="position-relative next-menu" id-marc="0" ><img src="images/cuidado/logoprograma-cpn.png" alt=""><span style="bottom: 33px;left: 25%;font-size: .8em;" class="position-absolute text-color-white display-block">Cuidado perinetal y neonatal</span></a></div>
+                        <div class="ed-item s-50"><a data-id="desarrollo" href="" class="position-relative next-menu" id-marc="0" ><img src="images/desarrollo/logoprograma-din.png" alt=""><span style="bottom: 33px;left: 25%;font-size: .8em;" class="position-absolute text-color-white display-block">Desarollo integral de los niños</span></a></div>
+                        <div class="ed-item s-50"><a data-id="vida" href="" class="position-relative next-menu" id-marc="0" ><img src="images/vida/logoprograma-vs.png" alt=""><span style="bottom: 33px;left: 30%;" class="position-absolute text-color-white display-block">Vida saludable</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer> 
+    <div class="ed-container full">
+        <section id="logos" class="ed-item s-60 s-offset-20">
+           <div>
+               <img src="images/template/patalogos1.png" alt="">
+               <img src="images/template/patalogos2.png" alt="">
+               <img src="images/template/patalogos3.png" alt="">
+               <img src="images/template/patalogos4.png" alt="">
+               <img src="images/template/patalogos5.png" alt="">
+               <img src="images/template/patalogos6.png" alt="">
+               <img src="images/template/patalogos7.png" alt="">
+               <img src="images/template/patalogos8.png" alt="">
+           </div>
+        </section>
+        <section id="text" class="ed-item s-60 s-offset-20">
+            <img src="images/template/patalogos9.png" alt="">
+        </section>
+    </div>
+    </footer>
+<img src="images/cuidado/marcos/marco-cpn.png" alt="" class="display-none" id="cuidado" style="width:571px;height:571px;">
+<img src="images/desarrollo/marcos/marco-din-09.png" alt="" class="display-none" id="desarrollo" style="width:571px;height:571px;">
+<img src="images/familia/marcos/marco-fg.png" alt="" class="display-none" id="familia" style="width:571px;height:571px;">
+<img src="images/vida/marcos/marco-vs.png" alt="" class="display-none" id="vida" style="width:571px;height:571px;">
+<!--<div id="pegatinas">
+    <a class="pegatina"><img width="200" height="100" src="images/accesorios/gafas.png" alt="" id="i0"></a>
+    <button class="removeFoto">delete objetos</button>
+</div>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/fabric.min.js"></script>
+<script src="js/core.js"></script>
+<script>
+    
+    </script>
+</body>
+</html>

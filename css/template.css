@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Gomez';
+    src: url('../fonts/Gomez-009.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gomez';
+    src: url('../fonts/Gomezb-009.ttf');
+    font-weight: 500;
+    font-style: bold;
+}
+
+html{
+    background-image: url(../images/template/fondo-01.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a,span,p,h1,h2,h3,h4,h5
+{
+    font-family: 'Gomez';
+}
+ 
+video
+{
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
+    position: absolute;
+    width: auto;
+    max-width: 745px;
+    max-height: 563px;
+}
+/*Modulos*/
+
+/* Header */
+#contenedor-logo{
+    width: 193px;
+    height: 163px;
+    margin: auto;
+    background-image: url(../images/template/contenedor-logo.png);
+    background-position-x: 0;
+    background-position-y: -5px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+/* Controles Cabina*/
+
+#content
+{
+    width: 110%;
+}
+.multimedia-cam, .multimedia-canvas{
+	width: 749px;
+	height: 564px;
+	background-color: #fff;
+    border: 2px solid black;
+    overflow: auto;
+    position: relative;
+}
+
+.multimedia-canvas
+{
+     border: 2px solid black;
+}
+#startbutton{
+    cursor: pointer;
+}
+#paginate a
+{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid black;
+    font-family: 'Gomez';
+    font-size: 2em;
+    color: black;
+}
+
+#paginate a.active
+{
+    -webkit-box-shadow: 0px 0px 11px 0px aqua;
+    -moz-box-shadow: 0px 0px 11px 0px aqua;
+    box-shadow: 0px 0px 11px 0px aqua;    
+}
+
+.steps-description
+{
+    background-image: url(../images/template/contenedortexto.png);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position:  9px;
+    background-size: cover;
+    min-height: 120px;
+    padding: 10px;
+    position: relative;
+    
+}
+.steps-description:before {
+    content: '';
+    background-image: url(../images/template/cinta-contenedortexto.png);
+    position: absolute;
+    width: 241px;
+    height: 53px;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 0;
+
+}
+.steps-description:after{
+    content: '';
+    background-image: url(../images/template/margen-contenedortexto.png);
+    width: 107%;
+    height: 139px;
+    position: absolute;
+    left: 0;
+    background-origin: content-box;
+    top: 0;
+    background-position: 0 0;
+    background-size: cover;
+
+}
+.download-photo{
+    cursor: pointer !important;
+    position: relative;
+    z-index: 10;
+}
+.steps-description_change:after{
+    background-size: 100% 111%;
+    height: 166px;
+}
+.content
+{
+    min-height: 102px;
+    font-family: 'Gomez';
+}
+/* Helpers */
+
+.align-center
+{
+    text-align: center;
+}
+
+.none-list-astyle
+{
+    list-style: none;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.display-block
+{
+    display: block !important;
+}
+
+.display-none
+{
+    display: none !important;
+}
+
+.flex-center
+{
+    display: flex;
+    align-items: center;
+    /* alineacion horizontal */
+    justify-content: center;
+}
+
+.text-decoration-none, .text-decoration-none:hover{
+    text-decoration: none;
+}
+
+.text-bold
+{
+    font-weight: bold;
+}
+
+.texto-color-black
+{
+    color: black;
+}
+
+.text-color-white
+{
+    color: white;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+.overflow-y
+{
+    max-height: 329px;
+    overflow-y: scroll;
+}
+
+.background-download
+{
+    background-color: #E66D56;
+}
+.d-text
+{
+    font-size: .7em;
+    
+}
+
+.center-block
+{
+    margin: 0 auto;
+}
